@@ -1,0 +1,7 @@
+1. Open Terminal/cmd
+	ls/dir 
+	cd <Name of the folder>
+	mkdir <Name of the folder>
+	
+2. Type Jupyter Notebook 
+3. Localhost will open. 
