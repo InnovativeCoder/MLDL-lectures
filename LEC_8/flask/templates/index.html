@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript"> //js script
+	function httpGetAsync(theUrl, callback) {
+	    var xmlHt tp = new XMLHttpRequest();
+	    xmlHttp.onreadystatechange = function() {
+	        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+	            callback(xmlHttp.responseText);
+	    }
+	    xmlHttp.open("GET", theUrl, true); // true for asynchronous
+	    xmlHttp.send(null);
+	}// using this file to see how we can call APIs from JS
+
+	httpGetAsync('http://127.0.0.1:5000/store',function(response){ //will show an alert on the screen
+		alert(response);
+	})
+
+</script>
+</head>
+<body>
+
+<div id="myElement">
+	Hello, world!
+</div>
+
+</body>
+</html>
